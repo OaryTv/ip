@@ -1,0 +1,46 @@
+head{
+	background-color: #2C2F33;
+	color: black;
+}
+body{
+	background-color: #fefee2;
+	color: black;
+}
+footer{
+	background-color: #fff0bc;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0
+}
+.logo{
+	width: 98px;
+	height: 80px;
+}
+.icon{
+	width: 50px;
+	height: 50px;
+}
+.localisation{
+	width: 20px;
+	height: 20px;
+}
+.box{
+	width: 400px;
+	height: 400px;
+	background: #fff0bc;
+	margin: 20px auto 0 auto;
+	text-align: center;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loader{
+	position: absolute;
+	width: 150px;
+
+.hidden{
+	display: none;
+}
