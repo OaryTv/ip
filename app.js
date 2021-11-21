@@ -1,14 +1,24 @@
-const box = document.querySelector('.box');
-const txt = document.querySelector('.txt');
 const loader = document.querySelector('.loader');
 
 window.addEventListener('load', () => {
 
-    fetch('jsonplaceholder.typicode.com/posts/1')
-    .then(reponse => {
-        console.log(reponse);
-        return reponse.json();
-    })
+    loader.classList.add('fondu-out');
 
+})
 
+const slidingNewsletter = document.querySelector('.slide-in');
+
+window.addEventListener('scroll', () => {
+
+    const {scrollTop, clientHeight} = document.documentElement;
+
+    // console.log(scrollTop, clientHeight);
+
+    const topElementToTopViewport = slidingNewsletter.getBoundingClientRect().top;
+
+    console.log(topElementToTopViewport);
+
+    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.8){
+        slidingNewsletter.classList.add('active')
+    }
 })
